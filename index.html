@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Audio-to-Image Generation Samples</title>
+    <script type="text/javascript" src="js/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
 <body>
+    <div class="container">
+        <h1 align="center">Audio to Scene Samples</h1>
 
-<h2>Basic HTML Table</h2>
+        <!-- <h2>Qualitative Results</h2> -->
 
-<table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
-  </tr>
-</table>
-
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">Description</th>
+                    <th scope="col" class="text-center">Input Audio Segment</th>
+                    <th scope="col" class="text-center">Ground Truth Image</th>
+                    <th scope="col" class="text-center">Results</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">Soccer</td>
+                    <td class="text-center"><audio src="./samples/soccer/audio.mp3" controls></audio></td>
+                    <td class="text-center"><img src="./samples/soccer/gt.png" /></td>
+                    <td class="text-center">
+                        <img src="./samples/soccer/result1.png" />
+                        <img src="./samples/soccer/result2.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">Baseball (broadcast)</td>
+                    <td class="text-center"><audio src="./samples/broadcast/audio.mp3" controls></audio></td>
+                    <td class="text-center"><img src="./samples/broadcast/gt.png" /></td>
+                    <td class="text-center">
+                        <img src="./samples/broadcast/result1.png" />
+                        <img src="./samples/broadcast/result2.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">Baseball (playview)</td>
+                    <td class="text-center"><audio src="./samples/playview/audio.mp3" controls></audio></td>
+                    <td class="text-center"><img src="./samples/playview/gt.png" /></td>
+                    <td class="text-center">
+                        <img src="./samples/playview/result1.png" />
+                        <img src="./samples/playview/result2.png" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
